@@ -1,3 +1,122 @@
-.wow {
-  width: 100px;
+
+body{
+
+    background: rgb(203, 203, 203);
+}
+.yh{
+    position: relative;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+.container{
+    position: relative;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    background: rgb(255, 255, 255);
+    border-radius:10px;
+    padding: 10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+   
+}
+
+
+.btn-atras,
+.btn-adelante{
+    border: none;
+    width: 3vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(252, 252, 252, 0.489);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    z-index: 9;
+    cursor: pointer;
+    color: rgb(205, 205, 205);
+}
+.btn-atras:hover{
+    color: rgb(68, 68, 68);
+    *box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.878);
+}
+.btn-adelante:hover{
+    color: rgb(68, 68, 68);
+    *box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.878);
+}
+.btn-atras i,
+.btn-adelante i{
+    font-size: 30px;
+
+
+}
+.btn-adelante {
+    right: 0;
+    border-left: 1px solid rgb(13, 77, 122);
+}
+.btn-atras{
+    left: 0;
+    border-right: 1px solid rgb(13, 77, 122);
+}
+.thunb{
+   left: 0;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.container_slider{
+    position: relative;
+    display: flex;
+
+}
+.slidersContent{
+    cursor: pointer;
+    position: relative;
+    width: 250px;
+    height:  395px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px .4px rgb(14, 102, 179);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+.slidersContent img{
+
+     width: 100%;
+     height: 70%;
+     object-fit: contain;
+}
+.slidersContent p{
+    display: block;
+    text-align: center;
+    background: rgb(14, 104, 230);
+    color: #fff;
+    padding: 5px;
+
+}
+
+.p{
+
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0px;
+    background: #eee;
 }
